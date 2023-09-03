@@ -23,7 +23,37 @@ header {
   margin: 0 20px;
 }
 
-/* form-areaデザイン */
+/* リンクの文字色 */
+a {
+  color: white;
+}
+
+/* トップページのデザイン */
+.top-page {
+  width:80%;
+  margin:0 auto;
+  margin-top: 15px;
+  margin-bottom:15px;
+}
+
+/* スライドショー */
+.slider-area {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 80%;
+}
+
+.slider-img {
+  height: auto;
+  margin: 0 10px;
+}
+
+.slider-img img {
+  height: auto;
+  width: 100%;
+}
+
+/* コンタクトフォームのデザイン */
 .contact-form {
   width:80%;
   margin:0 auto;
