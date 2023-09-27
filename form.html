@@ -8,11 +8,11 @@
   </head>
   <body>
     <header>
-      <h1 class="headline">榊原のホームページ</h1>
+      <a class="link-none" href="index.html"><h1 class="headline">榊原のホームページ</h1></a>
       <ul class="header-nav-list">
         <a href="index.html"><li class="nav-list-item">HOME</li></a>
-        <li class="nav-list-item">ABOUT</li>
-        <li class="nav-list-item">PRODUCT</li>
+        <a href="greeting.html"><li class="nav-list-item">GREETING</li></a>
+        <a href="study.html"><li class="nav-list-item">STUDY</li></a>
         <a href="form.html"><li class="nav-list-item">CONTACT</li></a>
       </ul>
     </header>
@@ -55,8 +55,8 @@
           <label class="form-label" for="inquiry">お問い合わせカテゴリ<span class="required">(必須)</span></label>
           <select id="inquiry" name="inquiry" required>
             <option value="">選択してください</option>
-            <option value="service">サービスについて</option>
-            <option value="product">製品について</option>
+            <option value="site">このサイトについて</option>
+            <option value="study">学習状況について</option>
             <option value="other">その他</option>
           </select>
         </div>
@@ -75,10 +75,10 @@
     
     <footer>
       <ul class="footer-nav-list">
-        <li>HOME |</li>
-        <li>ABOUT |</li>
-        <li>PRODUCT |</li>
-        <li>CONTACT</li>
+        <a href="index.html"><li>HOME |</li></a>
+        <a href="greeting.html"><li>GREETING |</li></a>
+        <a href="study.html"><li>STUDY</li></a>
+        <a href="form.html"><li>CONTACT</li></a>
       </ul>
         <p>© All rights reserved by Minoru Sakakibara</p>
     </footer>

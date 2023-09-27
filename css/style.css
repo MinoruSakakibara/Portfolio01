@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+/* 全体の背景デザイン */
+body {
+  background-image: url(../img/white_00097.jpg);
+  background-size: cover;
+}
+
+/* 全体の文字デザイン */
+h1, p, li, label, span, select, input {
+  font-family: serif;
+}
+
+label, select, input {
+  font-weight: bold;
+}
+
 /* headerデザイン */
 header {
   width: 100%;
@@ -26,6 +42,29 @@ header {
 /* リンクの文字色 */
 a {
   color: white;
+}
+
+.link-none {
+  text-decoration: none;
+}
+
+/* footerデザイン */
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #174a5c;
+  color: white;
+  text-align: center;
+}
+
+.footer-nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.footer-nav-list li {
+  display: inline-block;
 }
 
 /* トップページのデザイン */
@@ -93,6 +132,106 @@ a {
   height: auto !important;
 }
 
+/* 挨拶ページのデザイン */
+.greeting-area {
+  width:60%;
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom:20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  /* color: #5d627b; */
+  background: white;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.greeting-title {
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: double;
+}
+
+.greeting-area p {
+  font-size: 20px;
+}
+
+.signature {
+  padding-top: 20px;
+  text-align: right;
+  padding-right: 20%;
+}
+
+.signature p {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* 学習状況ページのデザイン */
+
+.study-area {
+  width:80%;
+  margin:0 auto;
+  margin-top: 15px;
+  margin-bottom:15px;
+}
+
+.title-area {
+  text-align: center;
+}
+
+.study-status {
+  width: 50%;
+  margin:0 auto;
+  border-bottom: double;
+}
+
+.title-area p {
+  font-size: 20px;
+}
+
+.study-object {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.object-area {
+  display: flex;
+}
+
+.object-area-rv {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.object-title {
+  border-bottom: solid;
+}
+
+.object-title-rv {
+  text-align: right;
+  border-bottom: solid;
+}
+
+.object-text {
+  padding-left: 80px;
+}
+
+.object-text-rv {
+  padding-right: 80px;
+}
+
+.portfolio p {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-weight: bold;
+}
+
+.object-text a {
+  color: #000000;
+}
+
 /* コンタクトフォームのデザイン */
 .contact-form {
   width:80%;
@@ -150,25 +289,6 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0; 
 } 
 
-/* footerデザイン */
-footer{
-  width: 100%;
-  height: 100px;
-  background-color: #174a5c;
-  color: white;
-  text-align: center;
-}
-
-.footer-nav-list {
-  text-align: center;
-  padding: 10px 0;
-  margin: 0 auto;
-}
-
-.footer-nav-list li {
-  display: inline-block;
-}
-
 @media screen and (max-width: 428px) {
   .header-nav-list li {
     display: block;
@@ -177,15 +297,11 @@ footer{
   .contact-form {
     width:90%;
     margin:0 auto;
-    margin-top: 15px;
-    margin-bottom:15px;
   }
 
   .top-page {
     width:90%;
     margin:0 auto;
-    margin-top: 15px;
-    margin-bottom:15px;
   }
 
   .slider-area {
@@ -197,20 +313,87 @@ footer{
   .explain-area {
     width: 90%;
     margin: 0 auto;
-    padding: 10px 0 10px 0;
-    text-align: center;
     font-size: 15px;
   }
 
   .history-area {
     width:90%;
-    margin: 10px auto;
-    padding: 10px;
-    line-height: 1.8;
-    overflow: auto;
-    border: 2px solid #c0c0c0;
-    color: #000000;
+  }
+
+  .greeting-area {
+    width: 90%;
+  }
+
+  .greeting-title {
+    font-size: 25px;
+  }
+  
+  .greeting-area p {
+    font-size: 15px;
+  }
+
+  .signature {
+    padding-right: 5%;
+  }
+  
+  .signature p {
+    font-size: 20px;
+  }
+
+  .study-area {
+    width:80%;
+    margin:0 auto;
+  }  
+
+  .study-status {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .title-area p {
+    font-size: 15px;
+  }
+  
+  .study-object {
+    width: 100%;
+    margin: 0 auto;
+  }  
+
+  .object-title {
+    font-size: 25px;
+  }
+
+  .object-title-rv {
     text-align: left;
-    height: 180px;
+    font-size: 25px;
+  }
+
+  .object-area {
+    display: block;
+  }
+
+  .object-area-rv {
+    display: block;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+
+  .object-text {
+    padding: 0 0 0 0;
+  }
+
+  .object-text-rv {
+    padding: 0 0 0 0;
+  }
+
+  .object-text p {
+    font-size: 15px;
+  }
+
+  .object-text-rv p {
+    font-size: 15px;
   }
 }
